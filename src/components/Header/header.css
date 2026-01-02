@@ -1,11 +1,13 @@
 header {
     min-height: 100vh;
-    padding-top: 7rem;
     overflow: hidden;
     position: relative;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #667eea 75%, #764ba2 100%);
     background-size: 400% 400%;
     animation: gradientShift 20s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes gradientShift {

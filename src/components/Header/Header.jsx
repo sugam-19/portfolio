@@ -2,7 +2,6 @@ import React from "react";
 import "./header.css";
 import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
-import sugam from "../../assets/sugam.jpeg";
 
 const Header = () => {
   return (
@@ -14,10 +13,6 @@ const Header = () => {
           <h5 className="text-light">Full Stack Developer</h5>
           <CTA />
           <HeaderSocials />
-
-          <div className="me">
-            <img src={sugam} alt="Maheshwor Poudel" />
-          </div>
 
           <a href="#contact" className="scroll__down">
             Scroll Down
