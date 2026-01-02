@@ -107,6 +107,11 @@ button:disabled {
    .container.contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;
+    width: 70%;
+   }
+
+   .contact__option {
+    padding: 1rem;
    }
    } 
    
@@ -114,5 +119,39 @@ button:disabled {
    @media screen and (max-width: 600px) {
     .container.contact__container {
         width: var(--container-width-sm);
-       }
+    }
+
+    .contact__options {
+        gap: 1rem;
+    }
+
+    .contact__option {
+        padding: 1rem 0.8rem;
+    }
+
+    .contact__option-icon {
+        font-size: 1.3rem;
+    }
+
+    .contact__option h4 {
+        font-size: 1rem;
+    }
+
+    .contact__option h5 {
+        font-size: 0.85rem;
+    }
+
+    .contact__option a {
+        font-size: 0.75rem;
+    }
+
+    input, textarea {
+        padding: 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    .submit-message {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
    } 

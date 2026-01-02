@@ -99,16 +99,47 @@
 
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) ============ */
 @media screen and (max-width: 1024px) {
-   .about__content p {
-    margin: 1rem 0 1.5rem;
+   .about__container {
+    max-width: 700px;
    }
-  } 
+
+   .about__cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+   }
+
+   .about__card {
+    padding: 2rem 1.5rem;
+   }
+
+   .about__content p {
+    margin: 1.5rem 0 2rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+   }
+  }
   
   /* =========== MEDIA QUERIES (SMALL DEVICES) ============ */
   @media screen and (max-width: 600px) {
+    .about__container {
+        max-width: 100%;
+    }
+
     .about__cards{
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .about__card {
+        padding: 1.5rem 1rem;
+    }
+
+    .about__icon {
+        font-size: 1.5rem;
+    }
+
+    .about__card h5 {
+        font-size: 0.9rem;
     }
 
     .about__content {
@@ -116,6 +147,11 @@
     }
 
     .about__content p {
+        padding: 1.2rem;
+        font-size: 0.95rem;
+        text-align: left;
+    }
+  }
         margin: 1.5rem 0;
     }
   } 

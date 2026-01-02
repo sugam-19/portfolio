@@ -68,6 +68,10 @@
     .service {
         height: auto;
     }
+
+    .service__list {
+        padding: 1.5rem;
+    }
 } 
    
    /* =========== MEDIA QUERIES (SMALL DEVICES) ============ */
@@ -75,5 +79,22 @@
     .services__container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        max-width: 100%;
+    }
+
+    .service__head {
+        padding: 1.5rem;
+    }
+
+    .service__head h3 {
+        font-size: 1.1rem;
+    }
+
+    .service__list {
+        padding: 1.2rem;
+    }
+
+    .service__list p {
+        font-size: 0.85rem;
     }
 } 

@@ -253,6 +253,14 @@ img{
   section{
     margin-top: 6rem;
   }
+
+  section > h2 {
+    font-size: 2.5rem;
+  }
+
+  section > h5 {
+    font-size: 0.9rem;
+  }
 } 
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ============ */
@@ -261,8 +269,23 @@ img{
     width: var(--container-width-sm);
   }  
 
+  section{
+    margin-top: 4rem;
+  }
+
   section > h2{
     margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  section > h5 {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8rem;
   }
 } 
   
