@@ -1,36 +1,28 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.jpg";
-import netflix from "../../assets/netflix_clone.png";
-import portfolio from "../../assets/portfolio.png";
-import VRS from "../../assets/VRS.png";
+import portfolioImg from "../../assets/portfolio.png";
 
 const data = [
   {
     id: 1,
-    image: portfolio,
-    title: "Portfolio",
-    github: "https://github.com/sugam-hub/portfolio",
-    demo: "http://maheshwor-poudel.com.np/",
+    image: "https://kidncode.com/assets/knc-logo-D8Qrlh3n.png",
+    title: "Kidncode",
+    description: "Educational platform for coding and programming",
+    demo: "https://kidncode.com/",
   },
   {
     id: 2,
-    image: netflix,
-    title: "Netflix Clone",
-    github: "https://github.com/sugam-hub/NETFLIX",
-    demo: "https://github.com",
+    image: "https://concertoanalytics.com/wp-content/uploads/2020/10/card_1_model.jpg",
+    title: "Concerto Analytics",
+    description: "Data analytics and business intelligence platform",
+    demo: "https://concertoanalytics.com/",
   },
   {
     id: 3,
-    image: VRS,
-    title: "Vehicle Rental System",
-    github: "https://github.com/sugam-hub/Vehicle-Rental-System",
-    demo: "https://github.com",
+    image: portfolioImg,
+    title: "My Portfolio",
+    description: "Personal portfolio website",
+    demo: "https://maheshwor-poudel.com.np/",
   },
 ];
 
@@ -42,7 +34,7 @@ const Portfolio = () => {
         <h2>Portfolio</h2>
 
         <div className="container portfolio__container">
-          {data.map(({ id, image, title, github, demo }) => {
+          {data.map(({ id, image, title, demo }) => {
             return (
               <article key={id} className="portfolio__item">
                 <div className="portfolio__item-image">
@@ -50,10 +42,7 @@ const Portfolio = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
-                  <a href={github} className="btn" target="_blank">
-                    Github
-                  </a>
-                  <a href={demo} className="btn btn-primary" target="_blank">
+                  <a href={demo} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                     Live Demo
                   </a>
                 </div>

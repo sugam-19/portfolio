@@ -69,20 +69,6 @@ const Services = () => {
             </ul>
           </article>
           {/* End of Web Development */}
-
-          <article className="service">
-            <div className="service__head">
-              <h3>Content Creation</h3>
-            </div>
-
-            <ul className="service__list">
-              <li>
-                <BiCheck className="service__list-icon" />
-                <p>Content Writing</p>
-              </li>
-            </ul>
-          </article>
-          {/* End of Content Creation */}
         </div>
       </section>
     </>

@@ -9,7 +9,7 @@ const Footer = () => {
     <>
       <footer>
         <a href="#" className="footer__logo">
-          SUGAM.
+          MAHESHWOR.
         </a>
 
         <ul className="permalinks">
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
 
         <div className="footer__copyright">
-          <small>&copy; SUGAM. All rights reserved.</small>
+          <small>&copy; MAHESHWOR. All rights reserved.</small>
         </div>
       </footer>
     </>
